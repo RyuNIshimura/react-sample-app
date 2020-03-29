@@ -1,0 +1,36 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "ナタリーポートマン",
+      "content": "エルサレム",
+      "like": true,
+      "otherLike": false,
+      "matched": false
+    },
+    {
+      "id": "2",
+      "title": "キーラナイトレイ",
+      "content": "イギリス",
+      "like": true,
+      "otherLike": false,
+      "matched": false
+    },
+    {
+      "id": "3",
+      "title": "エミリーブラント",
+      "content": "イギリス",
+      "like": true,
+      "otherLike": true,
+      "matched": true
+    },
+    {
+      "id": "4",
+      "title": "エルファニング",
+      "content": "アメリカ",
+      "like": true,
+      "otherLike": false,
+      "matched": false
+    }
+  ]
+}

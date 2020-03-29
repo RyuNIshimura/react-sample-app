@@ -1,0 +1,45 @@
+.article {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid;
+  margin: 1rem;
+}
+.article-content {
+  width: 1300px;
+  margin: 10px auto;
+  position: relative;
+  height: 100%;
+  align-items: center;
+}
+.column {
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+  max-width: 200px;
+}
+.like-button {
+  padding: 1rem;
+  color: #fff;
+  background-color: #4285f4;
+  border-color: #4285f4;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.like-button-disabled {
+  padding: 1rem;
+  color: #fff;
+  background-color: #B7BCC1;
+  border-color: #B7BCC1;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+.like-button:focus {
+  outline: none;
+}
+.like-button-disabled:focus {
+  outline: none;
+}

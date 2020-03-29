@@ -1,0 +1,22 @@
+{
+  "name": "react-sample-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "fixpack": "^3.0.6",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.9"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "docker-compose run --rm app yarn lint"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
