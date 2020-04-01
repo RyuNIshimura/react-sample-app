@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/Article.css';
+import './styles/Article.scss';
 import { Article, State } from './interfaces/Interfaces'
 
 class Articles extends React.Component<{}, State> {
