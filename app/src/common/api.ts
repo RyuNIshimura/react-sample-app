@@ -1,0 +1,1 @@
+export const endPoint: string = 'http://localhost:3001/articles';

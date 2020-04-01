@@ -1,6 +1,8 @@
 import React from 'react';
 import './styles/Article.scss';
 import { Article, State } from './interfaces/Interfaces'
+// @ts-ignore
+import { endPoint } from './common/api.ts';
 
 class Articles extends React.Component<{}, State> {
   state: State = {
@@ -10,7 +12,7 @@ class Articles extends React.Component<{}, State> {
     this.fetchArticles();
   }
   fetchArticles(): void {
-    fetch('http://localhost:3001/articles')
+    fetch(endPoint)
       .then(response => response.json())
       .then(json => {
         this.setState({ articles: json });
@@ -19,7 +21,7 @@ class Articles extends React.Component<{}, State> {
   putArticles(article: Article): void {
     let matched = false;
     if (article.otherLike) matched = true;
-    fetch('http://localhost:3001/articles/' + article.id, {
+    fetch(endPoint + article.id, {
       method: 'PUT',
       headers: {
         Accept: 'application/json',
