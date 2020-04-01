@@ -1,18 +1,8 @@
 import React from 'react';
 import './styles/Article.css';
+import { Article, State } from './interfaces/Interfaces'
 
-interface Article {
-  id: string;
-  title: string;
-  content: string;
-  like: boolean;
-  otherLike: boolean;
-  matched: boolean;
-}
-interface State {
-  articles: Array<Article>;
-}
-class Article extends React.Component<{}, State> {
+class Articles extends React.Component<{}, State> {
   state: State = {
     articles: [],
   };
@@ -92,4 +82,4 @@ class Article extends React.Component<{}, State> {
   }
 }
 
-export default Article;
+export default Articles;
