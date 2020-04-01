@@ -29,6 +29,7 @@
     "@types/react-dom": "^16.9.0",
     "@typescript-eslint/eslint-plugin": "^2.0.0",
     "@typescript-eslint/parser": "^2.0.0",
+    "bootstrap": "^4.4.1",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-react": "^1.1.7",
@@ -39,6 +40,7 @@
     "json-server": "^0.16.1",
     "node-sass": "^4.13.1",
     "prettier": "^1.18.2",
+    "react-bootstrap": "^1.0.0",
     "typescript": "~3.7.2"
   },
   "eslintConfig": {
